@@ -5,11 +5,11 @@ public aspect TraceAspectPoudel {
 	pointcut methotToTrace(): classToTrace() && execution(* *(..));
 	before():methotToTrace() {
 		String info = thisJoinPointStaticPart.getSignature() + "," + thisJoinPointStaticPart.getSourceLocation().getLine();
-		System.out.println("[BGN]" + info);
+		System.out.println("\n\t[BGN]" + info);
 	}
 	after():methotToTrace(){
 		String info = thisJoinPointStaticPart.getSourceLocation().getFileName();
-		System.out.println("[END]" + info);
+		System.out.println("\t[END]" + info);
 	}
 
 	

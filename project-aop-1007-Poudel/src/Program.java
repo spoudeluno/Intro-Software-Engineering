@@ -7,13 +7,13 @@ public class Program {
 		ServiceApp serviceApp = new ServiceApp("SRC");
 
 		String comName = componentApp.getName();
-		System.out.println("  COM NAME: " + comName);
+		System.out.println("\tCOM NAME: " + comName);
 
 		String dataName = dataApp.getName();
-		System.out.println("  DAT NAME: " + dataName);
+		System.out.println("\tDAT NAME: " + dataName);
 
 		String srcName = serviceApp.getName();
-		System.out.println("  SRC NAME: " + srcName);
+		System.out.println("\tSRC NAME: " + srcName);
 		System.out.println("[DBG] Done.");
 	}
 }
