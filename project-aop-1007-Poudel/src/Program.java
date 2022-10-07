@@ -8,7 +8,6 @@ public class Program {
 
 		String comName = componentApp.getName();
 		System.out.println("  COM NAME: " + comName);
-		System.out.println("Test");
 
 		String dataName = dataApp.getName();
 		System.out.println("  DAT NAME: " + dataName);
